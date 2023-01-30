@@ -252,7 +252,10 @@ document.addEventListener('DOMContentLoaded', () => {
     element.addEventListener('click', () => {
       document.body.style.overflow = 'hidden';
       document.querySelector('.search-pop-overlay').classList.add('search-active');
-      input.focus();
+      setTimeout(() => {
+        input.focus();
+        input.setSelectionRange(0, input.value.length);
+      }, 10);
       if (!isfetched) fetchData();
     });
   });
@@ -261,6 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const onPopupClose = () => {
     document.body.style.overflow = '';
     document.querySelector('.search-pop-overlay').classList.remove('search-active');
+    setTimeout(() => input.blur(), 10);
   };
 
   document.querySelector('.search-pop-overlay').addEventListener('click', event => {
