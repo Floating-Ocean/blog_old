@@ -361,7 +361,7 @@ td {
 .btn:hover {
   background: var(--btn-default-hover-bg);
   border-color: var(--btn-default-hover-border-color);
-  border-radius: 12rem;
+  border-radius: 20px;
   color: var(--btn-default-hover-color);
 }
 .btn + .btn {
@@ -1271,7 +1271,7 @@ body {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #5ea2d1;
+  background: #ff36ec;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
