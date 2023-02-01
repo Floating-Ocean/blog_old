@@ -48,7 +48,7 @@ var Affix = {
     if (window.getComputedStyle(this.element).display === 'none') return;
     let height = this.element.offsetHeight;
     let { offset } = this;
-    let offsetTop = offset.top;
+    let offsetTop = offset.top + parseInt(window.getComputedStyle(document.querySelector('.container'), null).getPropertyValue('padding-top'));
     let offsetBottom = offset.bottom;
     let { scrollHeight } = document.body;
     let affix = this.getState(scrollHeight, height, offsetTop, offsetBottom);
