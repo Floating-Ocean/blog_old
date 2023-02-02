@@ -476,7 +476,7 @@ color="0,0,0" opacity='0.15' zIndex="-2" count="64" src="//cdn.bootcss.com/canva
 
 <script>
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js', () => {
     var GUEST = ['nick', 'mail', 'link'];
     var guest = 'nick,mail';
     guest = guest.split(',').filter(item => {
@@ -489,11 +489,14 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       appId      : '5niM2G27RlnYT0Ypt9sljDwh-gzGzoHsz',
       appKey     : 'YMeqrxdiBhvyxtN6nWjHgApF',
       placeholder: "写点什么...",
-      avatar     : 'identicon',
+      avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,
       visitor    : true,
       lang       : 'zh-cn' || 'zh-cn',
+      master: '83b9ea2308ffed380d6ad2db19f708a2',
+      tagMeta: ["博主", "成员", "访客"],
+      friends: ['c4b751672e2cd80f38a099c6850668ad'],
       path       : location.pathname,
       enableQQ: true,
       recordIP   : true,
