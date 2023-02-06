@@ -536,7 +536,10 @@ color="0,0,0" opacity='0.15' zIndex="-2" count="64" src="//cdn.bootcss.com/canva
     <a href="/blog/posts/3800321871/" rel="prev" title="Codeforces - Round 847 Div 3">
       <i class="fa fa-chevron-left"></i> Codeforces - Round 847 Div 3
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/blog/posts/1889400236/" rel="next" title="牛客2023寒假集训 - 5">
+      牛客2023寒假集训 - 5 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -613,7 +616,7 @@ color="0,0,0" opacity='0.15' zIndex="-2" count="64" src="//cdn.bootcss.com/canva
           <a href="/blog/archives/">
         
           <span class="site-state-item-name">文章</span>
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">20</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -678,6 +681,7 @@ color="0,0,0" opacity='0.15' zIndex="-2" count="64" src="//cdn.bootcss.com/canva
 
   
   <script src="/blog/lib/anime.min.js"></script>
+  <script src="/blog/lib/Valine.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="/blog/lib/velocity/velocity.min.js"></script>
   <script src="/blog/lib/velocity/velocity.ui.min.js"></script>
@@ -779,7 +783,7 @@ color="0,0,0" opacity='0.15' zIndex="-2" count="64" src="//cdn.bootcss.com/canva
 
 <script>
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js', () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
     var GUEST = ['nick', 'mail', 'link'];
     var guest = 'nick,mail';
     guest = guest.split(',').filter(item => {
