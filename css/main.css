@@ -1048,6 +1048,11 @@ pre .javascript .function {
   position: relative;
   padding-top: 24px;
 }
+@media (max-width: 767px) {
+  .container {
+    padding-top: 0;
+  }
+}
 .main-inner {
   margin: 0 auto;
   width: calc(100% - 20px);
@@ -1314,7 +1319,7 @@ body {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8608ff;
+  background: #b9ffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
