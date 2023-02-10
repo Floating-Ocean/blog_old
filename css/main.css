@@ -1356,7 +1356,7 @@ body {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff4f9a;
+  background: #f973de;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1547,7 +1547,7 @@ body {
   border-bottom: none;
 }
 .post-toc .nav .nav-child {
-  display: none;
+  display: block;
 }
 .post-toc .nav .active > .nav-child {
   display: block;
