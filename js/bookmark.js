@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       window.anime({
         targets  : document.scrollingElement,
         duration : 200,
-        easing   : 'linear',
+        easing   : 'easeOutExpo',
         scrollTop: top
       });
     }
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       window.anime({
         targets : link,
         duration: 200,
-        easing  : 'linear',
+        easing  : 'easeOutExpo',
         top     : -30,
         complete: () => {
           setTimeout(() => {

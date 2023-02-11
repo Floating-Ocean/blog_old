@@ -159,7 +159,7 @@ NexT.utils = {
       window.anime({
         targets  : document.scrollingElement,
         duration : 500,
-        easing   : 'linear',
+        easing   : 'easeOutExpo',
         scrollTop: 0
       });
     });
@@ -243,7 +243,7 @@ NexT.utils = {
         window.anime({
           targets  : document.scrollingElement,
           duration : 500,
-          easing   : 'linear',
+          easing   : 'easeOutExpo',
           scrollTop: offset + 10
         });
       });
@@ -267,7 +267,7 @@ NexT.utils = {
       window.anime({
         targets  : tocElement,
         duration : 200,
-        easing   : 'linear',
+        easing   : 'easeOutExpo',
         scrollTop: tocElement.scrollTop - (tocElement.offsetHeight / 2) + target.getBoundingClientRect().top - tocElement.getBoundingClientRect().top
       });
     }

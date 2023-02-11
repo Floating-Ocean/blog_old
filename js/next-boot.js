@@ -39,7 +39,7 @@ NexT.boot.registerEvents = function() {
       window.anime({
         targets : currentTarget,
         duration: TAB_ANIMATE_DURATION,
-        easing  : 'linear',
+        easing  : 'easeOutExpo',
         opacity : 0,
         complete: () => {
           // Prevent adding TOC to Overview if Overview was selected when close & open sidebar.
@@ -49,7 +49,7 @@ NexT.boot.registerEvents = function() {
           window.anime({
             targets : target,
             duration: TAB_ANIMATE_DURATION,
-            easing  : 'linear',
+            easing  : 'easeOutExpo',
             opacity : 1
           });
         }
