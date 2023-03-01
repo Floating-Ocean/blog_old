@@ -319,6 +319,22 @@ blockquote p {
 .blockquote-info p {
   margin: 0;
 }
+.blockquote-todo {
+  border-left: 6px solid #ffc107;
+  color: var(--text-color-yellow);
+  margin: 0;
+  padding: 8px 18px;
+  border-radius: 5px;
+  background: rgba(255,193,7,0.08);
+  font-size: 0.845em;
+}
+.blockquote-todo cite::before {
+  content: '-';
+  padding: 0 5px;
+}
+.blockquote-todo p {
+  margin: 0;
+}
 dt {
   font-weight: bold;
 }
@@ -1385,7 +1401,7 @@ body {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #34304a;
+  background: #fffff0;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
