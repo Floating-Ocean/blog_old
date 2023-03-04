@@ -8,6 +8,7 @@
   --accent-color: #3d1808;
   --text-color-red: #360808;
   --text-color-green: #1b3810;
+  --text-color-yellow: #372b09;
   --blockquote-color: #666;
   --link-color: #555;
   --link-hover-color: #222;
@@ -34,6 +35,7 @@
     --accent-color: #fce9e3;
     --text-color-red: #ffebee;
     --text-color-green: #f1f8e9;
+    --text-color-yellow: #fffde7;
     --blockquote-color: #bbb;
     --link-color: #ccc;
     --link-hover-color: #eee;
@@ -333,6 +335,22 @@ blockquote p {
   padding: 0 5px;
 }
 .blockquote-todo p {
+  margin: 0;
+}
+.blockquote-warn {
+  border-left: 6px solid #f44336;
+  color: var(--text-color-red);
+  margin: 0;
+  padding: 8px 18px;
+  border-radius: 5px;
+  background: rgba(244,67,54,0.08);
+  font-size: 0.845em;
+}
+.blockquote-warn cite::before {
+  content: '-';
+  padding: 0 5px;
+}
+.blockquote-warn p {
   margin: 0;
 }
 dt {
@@ -1401,7 +1419,7 @@ body {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff22d0;
+  background: #7c70ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
